@@ -21,10 +21,10 @@
 - Two Group "isomorphic" to each other means, they are equal on the basis of "Group";
 
 ####Lie Group
-- "Lie group": Group + Manifold + c^infinity on "product" and "inverse" mappings;
+- "Lie group": Group + Manifold + C^infinity on "product" and "inverse" mappings;
 
 ####Algebra
-- "Algebra":
+- "Algebra":"Vector space" + "product";
 
 ####Lie Algebra
-- "Lie algebra":
+- "Lie algebra":"Vector space" + "Lie bracket"(a special "product");
