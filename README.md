@@ -14,8 +14,17 @@
 - "Diffeomorphism": 1.one-one-onto; 2."infinity differential"(C^infinity) forward and backward;
 - Two Manifolds "diffeomorphic" to each other means, they are equal on the basis of "Manifold";
 
-####Group Theory
+####Group
 - "Group": set G with a "product" GxG->G:associative, identity element, inverse element
 - "Homomorphism": keep the "product" relationship;
 - "Isomorphism": homomorphism + one-one-onto;
 - Two Group "isomorphic" to each other means, they are equal on the basis of "Group";
+
+####Lie Group
+- "Lie group": Group + Manifold + c^infinity on "product" and "inverse" mappings;
+
+####Algebra
+- "Algebra":
+
+####Lie Algebra
+- "Lie algebra":
