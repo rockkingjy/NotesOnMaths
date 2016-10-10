@@ -11,7 +11,7 @@
 
 ####Manifold
 - "n-dimensional differentiable manifold" M: 1.exist a "open cover" of M, such that, for every "open subset" of the "open cover", exist a homeomorphism to a "open subset" of R^n; 2.the mappings from any two different coordinate systems are "infinity differencial"(C^infinity);
-- "Diffeomorphism": 1.one-one-onto; 2."infinity differencial"(C^infinity) forward and backward;
+- "Diffeomorphism": 1.one-one-onto; 2."infinity differential"(C^infinity) forward and backward;
 - Two Manifolds "diffeomorphic" to each other means, they are equal on the basis of "Manifold";
 
 ####Group Theory
