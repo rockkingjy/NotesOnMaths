@@ -37,7 +37,6 @@
 - V_p: all the vectors on M of point p;
 - X_\mu(f)=\partial f(x) / \partial x^\mu|_p = \partial F(x^1,...,x^n))/\partial x^\mu|_p, \forall f \in \mathfrak{F}_M. 
 - {X_\mu} of point p are coordinate basis, v^\mu=v(x^\mu) are coordinate components of v;
-
 - Curve: a mapping of I->M, I\subseteq R.
 - Tangent vector: T(f):=d(f\circ C))/dt|_{t_0}, \forall f \in \mathfrak{F}_M.
 - X_\mu is a "tangent vector" of x^\mu coordinate line on point p;
