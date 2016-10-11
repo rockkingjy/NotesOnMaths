@@ -28,3 +28,11 @@
 
 ####Lie Algebra
 - "Lie algebra":"Vector space" + "Lie bracket"(a special "product");
+
+####
+- Scalar field on M(function on M): f:M->R;
+- \mathfrak{F}_M: all the scalar fields on M;
+- Vector: \mathfrak{F}_M->R;
+- V_p: all the vectors on M of point p;
+- X_\mu(f)=\partial f(x) / \partial x^\mu|_p = \partial F(x^1,...,x^n))/\partial x^\mu|_p, \forall f \in \mathfrak{F}_M. 
+- {X_\mu(f)} are coordinate basis, v^\mu=v(x^\mu) are coordinate components of v;
