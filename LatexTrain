@@ -15,6 +15,7 @@ Output_j=\sigma(\sum_{k=1}^{K} w^2_{kj}OutHid_k+b^2_j)
 Cost(w,b)=\frac{1}{N}\sum_{X_i\in X}||Output(X_i)-Y_i||
 \text{min }Cost(w,b)
 \{w,b\}=argmin_{\{w,b\}} Cost(w,b)
+Cost(w,b)=\sum_{X_i\in X}[log(P(Y=y_i|X=X_i))]=\sum_{X_i\in X}[log(Output(X_i)^T Y_i)]
 
 \begin{equation}
   Output=\begin{cases}
