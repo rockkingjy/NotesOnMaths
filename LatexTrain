@@ -3,11 +3,24 @@
 
 \begin{document}
 
+X=\{x_1,x_2,x_3\}
+Y=\{y_1,y_2,y_3\}
+X=\{X_1,X_2,X_3,X_4,...,X_N\}
+Y=\{Y_1,Y_2,Y_3,Y_4,...,Y_N\}
+Y_i \in \{y_1,y_2,y_3,...,y_L\}
+Input_k=W_k\cdot X_i + b_k
+InHid_k=W^1_k\cdot X_i + b^1_k=\sum_{i=1}^{M} w^1_{ik}x_i+b^1_k \\
+OutHid_k=\sigma(InHid_k)=\sigma(\sum_{i=1}^{M} w^1_{ik}x_i+b^1_k) \\
+Output_j=\sigma(\sum_{k=1}^{K} w^2_{kj}OutHid_k+b^2_j)
+Cost(w,b)=\frac{1}{N}\sum_{X_i\in X}||Output(X_i)-Y_i||
+\text{min }Cost(w,b)
+\{w,b\}=argmin_{\{w,b\}} Cost(w,b)
+
 \begin{equation}
-  f(x)=\begin{cases}
-    1, & \text{if $x<0$}.\\
-    0, & \text{otherwise}.
-  \end{cases}
+  Output=\begin{cases}
+    0,\text{if } \sigma (W\cdot X + b\leq 0)).\\
+    1,\text{if } \sigma (W\cdot X + b> 0)).
+\end{cases}
 \end{equation}
 
 \end{document}
