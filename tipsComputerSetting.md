@@ -112,3 +112,7 @@ set clipboard+=unnamed
 set autoread
 " 顶部底部保持3行距离
 set scrolloff=3
+
+
+
+# End
