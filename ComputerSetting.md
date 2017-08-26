@@ -66,6 +66,6 @@ change：/etc/ssh/ssh_config for Customer and Server ends:
 
 Host *
 
-ServerAliveInterval 600
+ServerAliveInterval 120
 
 
