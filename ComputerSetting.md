@@ -60,5 +60,12 @@ ssh-copy-id username@host(ipaddress)
 
 ssh username@host(ipaddress)
 
+## packet_write_wait: Connection to **** port 22: Broken pipe
+
+change：/etc/ssh/ssh_config for Linux and Mac:
+
+Host *
+
+ServerAliveInterval 120
 
 
