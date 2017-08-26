@@ -40,6 +40,9 @@ PubkeyAuthentication yes
 
 AuthorizedKeysFile .ssh/authorized_keys
 
+Then run:
+sudo /etc/init.d/ssh restart
+
 
 ## Customer end:
 
@@ -62,10 +65,13 @@ ssh username@host(ipaddress)
 
 ## packet_write_wait: Connection to **** port 22: Broken pipe
 
-change：/etc/ssh/ssh_config for Customer and Server ends:
+change：/etc/ssh/ssh_config for the Server ends:
 
 Host *
 
-ServerAliveInterval 120
+ServerAliveInterval 30
+
+Then run:
+sudo /etc/init.d/ssh restart
 
 
