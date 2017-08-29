@@ -65,7 +65,7 @@ ssh username@host(ipaddress)
 
 ## packet_write_wait: Connection to **** port 22: Broken pipe
 
-change：/etc/ssh/ssh_config for the Server ends:
+change：/etc/ssh/ssh_config for the customer ends:
 
 ServerAliveInterval 120
 
