@@ -67,11 +67,13 @@ ssh username@host(ipaddress)
 
 change：/etc/ssh/ssh_config for the Server ends:
 
-Host *
+ServerAliveInterval 120
 
-ServerAliveInterval 30
+TCPKeepAlive no
 
 Then run:
 sudo /etc/init.d/ssh restart
+
+or restart the ssh in Mac
 
 
