@@ -17,6 +17,9 @@ vim .vimrc
 # Set the ssh to login to the remote server
 
 ## Server end:
+$sudo apt-get install openssh-server
+
+$sudo service ssh status
 
 check the mode of the fold: ls -l .ssh 
 
