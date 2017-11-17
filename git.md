@@ -29,6 +29,9 @@ git push -u origin master
 # Pull from the GitHub
 git pull origin master
 
+# Clone the remote repository
+git clone https://github.com/rockkingjy/OpenKAI_docs
+
 # Change the remote repository URL
 
 git remote -v
