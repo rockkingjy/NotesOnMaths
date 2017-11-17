@@ -18,6 +18,14 @@ git remote -v
 
 git push -u origin master
 
+# To update Github
+
+git add .
+
+git commit -m "update"
+
+git push -u origin master
 
 # Pull from the GitHub
 git pull origin master
+
