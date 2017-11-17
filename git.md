@@ -18,7 +18,9 @@ git remote -v
 
 git push -u origin master
 
-# To update Github
+# Update Github after changes
+
+git status
 
 git add .
 
