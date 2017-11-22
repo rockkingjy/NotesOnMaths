@@ -11,7 +11,7 @@ sudo cp ./ZED  /etc/init.d/ZED
 sudo chmod +x /etc/init.d/ZED
 sudo update-rc.d ZED defaults
 ```
-ZED is the name of the script, refering [My ZED project](https://github.com/rockkingjy/ZedDataCollection)
+ZED is the name of the script, if you need to save the data in SD card etc., you need to mount it before running the programme. Refering [My ZED project](https://github.com/rockkingjy/ZedDataCollection)
 
 ## Mount and unmount NTFS
 To check the disk mounted:
