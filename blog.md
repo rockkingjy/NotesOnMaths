@@ -29,3 +29,7 @@ bundle exec jekyll b
 - Push the _site/ folder created by the local computer to the GitHub.io repository.
 
 - Check the site created by GitHub page: https://rockkingjy.github.io
+
+# Attention
+
+- Tag must be miniscule with no space inside.
