@@ -80,13 +80,19 @@ sudo /etc/init.d/ssh restart
 or restart the ssh in Mac
 
 ## Set Teamviewer boot up start
-Add teamviewer as start up programme: /usr/bin/teamviewer;
+* Set fix password:
+Set teamviewer -> Extras -> Options -> Security -> Personal password;
+* Account assignment:
+Set teamviewer -> Extras -> Options -> General;
+* Add teamviewer as start up programme
+Applications -> Startup Applications -> /usr/bin/teamviewer;
+* Set ubuntu automatic login;
+System Settings -> User Accounts -> Automatic Login;
 
-Set ubuntu automatic login;
-```
-cd /opt/teamviewer/tv_bin/script
-sudo cp teamviewerd.sysv /etc/init.d/
-sudo chmod 755 /etc/init.d/teamviewerd.sysv
-sudo update-rc.d teamviewerd.sysv defaults
-```
+## Use ssh + frp + 3rd part Server for ssh tunneling 
+* Rent a 3rd part server;
+* Install [frp](https://github.com/fatedier/frp) on both 3rd part server and local server;
+* ssh to access from your computer.
+
+
 
