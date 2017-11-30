@@ -80,6 +80,9 @@ sudo /etc/init.d/ssh restart
 or restart the ssh in Mac
 
 ## Set Teamviewer boot up start
+Add teamviewer as start up programme: /usr/bin/teamviewer;
+
+Set ubuntu automatic login;
 ```
 cd /opt/teamviewer/tv_bin/script
 sudo cp teamviewerd.sysv /etc/init.d/
