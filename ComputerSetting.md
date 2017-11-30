@@ -79,4 +79,11 @@ sudo /etc/init.d/ssh restart
 
 or restart the ssh in Mac
 
+## Set Teamviewer boot up start
+```
+cd /opt/teamviewer/tv_bin/script
+sudo cp teamviewerd.sysv /etc/init.d/
+sudo chmod 755 /etc/init.d/teamviewerd.sysv
+sudo update-rc.d teamviewerd.sysv defaults
+```
 
