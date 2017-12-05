@@ -26,3 +26,8 @@ mount:
 ```sh
 sudo mount -t ntfs /dev/mmcblk1p1 /media/nvidia/
 ```
+
+## Check ubuntu ker log:
+```sh
+tail -n 100 /var/log/kern.log
+```
