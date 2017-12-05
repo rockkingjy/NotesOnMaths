@@ -98,7 +98,7 @@ System Settings -> User Accounts -> Automatic Login;
 * Install [frp](https://github.com/fatedier/frp) on both 3rd part server and local server;
 * ssh to access from your computer.
 
-## Install brightness controler
+## Install brightness controller
 ```
 sudo add-apt-repository ppa:apandada1/brightness-controller
 sudo apt-get update
