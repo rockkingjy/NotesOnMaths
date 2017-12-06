@@ -36,3 +36,11 @@ git remote -v
 ```
 rm -rf .git
 ```
+- Create a branch
+```
+git checkout -b mybranch
+```
+- Change to another branch
+```
+git checkout existingbranch
+```
