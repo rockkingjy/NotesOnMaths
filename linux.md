@@ -1,3 +1,9 @@
+
+## Bash rename files in a folder(remove Depth_ for files in folder depth/)
+```
+rename 's/Depth_//' depth/Depth_*.png
+```
+
 ## Find a process and kill it
 ```sh
 ps aux | grep <NAME>
