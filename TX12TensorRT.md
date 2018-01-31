@@ -4,7 +4,7 @@ https://elinux.org/Jetson/TX1_Cloning
 OpenKAI image: https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
 
 ## Sample of tensorrt located in: /usr/src/tensorrt
-run:
+Run:
 ```
 ./bin/giexec
 ```
