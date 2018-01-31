@@ -34,7 +34,7 @@ sudo ./tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --
 Install-OpenKAI-TX1-after-ZED.sh
 
 
-## Sample of tensorrt located in: /usr/src/tensorrt
+## Sample of TensorRT located in: /usr/src/tensorrt
 Run:
 ```
 ./bin/giexec
@@ -47,3 +47,7 @@ Test with FP16:
 ```
 ./bin/giexec --model=/usr/src/tensorrt/data/mnist/mnist.caffemodel --deploy=/usr/src/tensorrt/data/mnist/mnist.prototxt --output=prob --batch=12 --half2=true
 ```
+## TensorRT customer layer implementation:
+https://github.com/AastaNV/Face-Recognition
+
+
