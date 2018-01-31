@@ -29,6 +29,11 @@ sudo ./tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --
 
 ## For cloning the image, referring: https://elinux.org/Jetson/TX1_Cloning
 
+## You can also run the install OpenKAI for TX1 script after install by Jetpack:
+
+Install-OpenKAI-TX1-after-ZED.sh
+
+
 ## Sample of tensorrt located in: /usr/src/tensorrt
 Run:
 ```
