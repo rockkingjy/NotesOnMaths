@@ -1,7 +1,29 @@
-## TX1/2 cloning
-https://elinux.org/Jetson/TX1_Cloning
+## How to Flash TX1/2
+1. Put your system into "reset recovery mode" by holding down the REC (S3)
+      button and press the RST (S1) button once, wait 2 seconds to release REC button, 
+      the LED will flash once on the board.
+2. To check it:s in reset recovery mode, by the command on the host:
+```
+lsusb
+```
+And it will show "NVidia Corp." on the terminal.
+3. Conect the USB Micro-A cable.
+4. Run command(the flash.sh file could be find in: ./jetpack/64_TX1/Linux_for_Tegra_64_tx1/bootloader):
+```
+sudo ./flash.sh jetson-tx1 mmcblk0p1
+```
+This will take several minutes.
 
-OpenKAI image: https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
+or:
+
+If you want to flash with the image already exist, down load the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
+
+And run the command:
+```
+sudo ./tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --cmd "write APP openkai.img"
+```
+
+## For cloning the image, referring: https://elinux.org/Jetson/TX1_Cloning
 
 ## Sample of tensorrt located in: /usr/src/tensorrt
 Run:
