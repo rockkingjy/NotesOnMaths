@@ -2,11 +2,12 @@
 1. Put your system into "reset recovery mode" by holding down the REC (S3)
       button and press the RST (S1) button once, wait 2 seconds to release REC button, 
       the LED will flash once on the board.
-2. To check it:s in reset recovery mode, by the command on the host:
+2. To check whether it's in reset recovery mode, by the command on the host:
 ```
 lsusb
 ```
 And it will show "NVidia Corp." on the terminal.
+
 3. Conect the USB Micro-A cable.
 4. Run command(the flash.sh file could be find in: ./jetpack/64_TX1/Linux_for_Tegra_64_tx1/bootloader):
 ```
