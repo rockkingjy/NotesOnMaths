@@ -19,11 +19,12 @@ or:
 
 If you want to flash with the image already exist, 
 
-first download the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
+first download the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ, put it in ./jetpack/64_TX1/Linux_for_Tegra_64_tx1/bootloader/
 
 And run the command:
 ```
-sudo ./bootloader/tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --cmd "write APP TX1_Jetpack30_OpenKAI_vek_20171121.img"
+cd bootloader/
+sudo ./tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --cmd "write APP TX1_Jetpack30_OpenKAI_vek_20171121.img"
 ```
 
 ## For cloning the image, referring: https://elinux.org/Jetson/TX1_Cloning
