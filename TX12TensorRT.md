@@ -9,7 +9,7 @@ lsusb
 And it will show "NVidia Corp." on the terminal.
 
 3. Conect the USB Micro-A cable.
-4. Run command(the flash.sh file could be find in: ./jetpack/64_TX1/Linux_for_Tegra_64_tx1/Linux_for_Tegra):
+4. Run command(the flash.sh file could be find in: ./jetpack/64_TX1/Linux_for_Tegra_64_tx1):
 ```
 sudo ./flash.sh jetson-tx1 mmcblk0p1
 ```
@@ -21,9 +21,9 @@ If you want to flash with the image already exist,
 
 first download the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
 
-And run the command(the tegraflash.sh file could be find in: ./jetpack/64_TX1/Linux_for_Tegra_64_tx1/bootloader):
+And run the command:
 ```
-sudo ./tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --cmd "write APP openkai.img"
+sudo ./bootloader/tegraflash.py --bl cboot.bin --applet nvtboot_recovery.bin --chip 0x21 --cmd "write APP TX1_Jetpack30_OpenKAI_vek_20171121.img"
 ```
 
 ## For cloning the image, referring: https://elinux.org/Jetson/TX1_Cloning
