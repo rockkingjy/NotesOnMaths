@@ -17,7 +17,9 @@ This will take several minutes.
 
 or:
 
-If you want to flash with the image already exist, down load the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
+If you want to flash with the image already exist, 
+
+first download the OpenKAI image:  https://drive.google.com/open?id=1x3YBFgBJL2xZZQC_vzUzO8s-m05hZZFJ
 
 And run the command:
 ```
