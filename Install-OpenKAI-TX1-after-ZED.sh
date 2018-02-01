@@ -60,8 +60,8 @@ chmod +x build.sh
 
 # Install ZED diriver
 wget --no-check-certificate https://www.stereolabs.com/developers/downloads/ZED_SDK_Linux_JTX1_v2.3.0.run
-chmod u+x ZED_SDK_Linux_JTX1_v2.2.0.run
-./ZED_SDK_Linux_JTX1_v2.2.0.run
+chmod u+x ZED_SDK_Linux_JTX1_v2.3.0.run
+./ZED_SDK_Linux_JTX1_v2.3.0.run
 
 # Install Jetson-Inference
 cd $HOME/src
