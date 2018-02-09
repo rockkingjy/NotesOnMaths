@@ -1,3 +1,5 @@
+## non-gui mode
+ctrl+alt+F2
 
 ## Bash rename files in a folder(remove Depth_ for files in folder depth/)
 ```
