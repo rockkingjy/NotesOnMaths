@@ -1,5 +1,12 @@
 ## non-gui mode
+```
 ctrl+alt+F2
+```
+## Delete files bypassing trash
+```
+rm -Rfv
+```
+-R: Recursively; -f: forcibly; -v:bypassing trash;
 
 ## Bash rename files in a folder(remove Depth_ for files in folder depth/)
 ```
