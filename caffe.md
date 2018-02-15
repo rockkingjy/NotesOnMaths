@@ -1,6 +1,6 @@
 ## draw nets
 ```
-./python/draw_net.py train_posenet.prototxt posenet.png
+python ./python/draw_net.py train.prototxt pic.png
 ```
 
 ## Save log to a file:
