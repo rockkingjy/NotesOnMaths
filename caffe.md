@@ -1,3 +1,8 @@
+## draw nets
+```
+./python/draw_net.py train_posenet.prototxt posenet.png
+```
+
 ## Save log to a file:
 ```
 python train.py 2>&1 | tee train.log
