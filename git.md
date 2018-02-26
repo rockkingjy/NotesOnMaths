@@ -43,4 +43,13 @@ git checkout -b mybranch
 - Change to another branch
 ```
 git checkout existingbranch
+```git submodule update 
+
+- Add submodule 'rock' as a submodule of the repository
+```
+git submodule add https://github.com/<user>/rock rock
+```
+Tell Git to download the contents of rock/:
+```
+git submodule update --init --recursive
 ```
