@@ -1,3 +1,11 @@
+## Check whether install the package and the version exists
+```
+apt-cache policy <nameOfPackage>
+```
+and installed with:
+```
+apt-get install <nameOfPackage>=<Version>
+```
 ## non-gui mode
 ```
 ctrl+alt+F2
