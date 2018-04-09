@@ -16,3 +16,7 @@ Run on the pc to store the images:
 ```
 /usr/bin/gst-launch-1.0 udpsrc port=8081 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! h264parse ! avdec_h264 ! jpegenc ! multifilesink location=image_%06d.jpg max-files=2
 ```
+Run on the pc to change the frame rate:
+```
+/usr/bin/gst-launch-1.0 udpsrc port=8081 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! h264parse ! avdec_h264 ! videorate ! "video/x-raw, framerate=10/1" ! jpegenc ! multifilesink location=image_%06d.jpg max-files=10
+```
