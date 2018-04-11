@@ -1,5 +1,7 @@
 Install Matconvenet:
 
+## Careful! Need to change back to gcc-5 back to compile caffe!
+
 $sudo apt-get install gcc-4.9 g++-4.9
 
 --> Set "priority=100" for gcc-4.9 and "priority=50" for gcc-5.
