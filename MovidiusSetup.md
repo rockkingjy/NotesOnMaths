@@ -3,3 +3,7 @@
 
 sed -i 's/version ${version}/version "${version}"/' cmake/Dependencies.cmake
 
+## Movidius with raspberry pi3:
+
+https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspberry-3-quick-start-guide-a89ff5e1d7ca
+
