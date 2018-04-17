@@ -1,6 +1,6 @@
 1. Create a bootable USB stick on macOS
 
-Download ubuntu-16.04.1-desktop-amd64.iso [[Link]()]
+Download ubuntu-16.04.1-desktop-amd64.iso [[Link](https://drive.google.com/drive/folders/11TobALF_VWeBLsCfoVtJhGeRUMW_Oq1m?usp=sharing)]
 
 Create the bootable USB according to the [[link](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#6)].
 
@@ -16,7 +16,7 @@ Attention: If choose from the LEGACY OPTIONS, it will cause the problem of unabl
 
 3.Install Nvidia GPU driver and CUDA 8.0
 
-Download cuda_8.0.61_375.26_linux.run 
+Download cuda_8.0.61_375.26_linux.run [[Link](https://drive.google.com/drive/folders/11TobALF_VWeBLsCfoVtJhGeRUMW_Oq1m?usp=sharing)]
 
 Ctrl+Alt+F1 -> login -> 
 ```
@@ -51,7 +51,7 @@ sudo apt-get install libgl-dev
 
 Attention: Should be CUDA8.0, CUDA9.0 will cause some error later.
 
-4. Download and install cuDNN7.0 (cudnn-8.0-linux-x64-v7.1.tgz) on ubuntu: [[Link]()]
+4. Download and install cuDNN7.0 (cudnn-8.0-linux-x64-v7.1.tgz) on ubuntu: [[Link](https://drive.google.com/drive/folders/11TobALF_VWeBLsCfoVtJhGeRUMW_Oq1m?usp=sharing)]
 ```
 tar -xzvf cudnn-8.0-linux-x64-v7.1.tgz
 sudo cp cuda/include/cudnn.h /home/elab/yanInstall/cuda-8.0/include
