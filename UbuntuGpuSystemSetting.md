@@ -1,6 +1,6 @@
 1. Create a bootable USB stick on macOS
 
-Download ubuntu-16.04.1-desktop-amd64.iso 
+Download ubuntu-16.04.1-desktop-amd64.iso [[Link]()]
 
 Create the bootable USB according to the [[link](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#6)].
 
@@ -16,34 +16,19 @@ Attention: If choose from the LEGACY OPTIONS, it will cause the problem of unabl
 
 3.Install Nvidia GPU driver and CUDA 8.0
 
-Follow the instructions: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-installation
+Download cuda_8.0.61_375.26_linux.run [[Link]()]
 
-Connect to internet -> Download CUDA Toolkit 8.0 GA1 the cuda_8.0.61_375.26_linux.run -> Ctrl+Alt+F1 -> login -> 
+Ctrl+Alt+F1 -> login -> 
 ```
-sudo gedit /etc/modprobe.d/blacklist-nouveau.conf
-```
-Add: 
-```
-blacklist nouveau
-blacklist lbm-nouveau
-options nouveau modeset=0
-alias nouveau off\nalias lbm-nouveau off
-```
-Then:
-```
-sudo update-initramfs -u
-cd Downloads
 sudo service lightdm stop 
 chmod 777 cuda_8.0.61_375.26_linux.run
 sudo ./cuda_8.0.61_375.26_linux.run --override --no-opengl-lib     
-```
-(OpenGL-lib will cause login loop!!!)
-```
 reboot
 nvidia-smi
 ```
+Attention: OpenGL-lib will cause login loop!!!!!!(Waste my days!!!)
 
-To change the cuda PATH permanently:http://docs.openkai.xyz/x86build.html or:
+Change the cuda PATH permanently:
 ```
 sudo gedit ~/.bashrc
 ```
@@ -54,7 +39,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 ```
 ```
 source ~/.bashrc
-nvcc —version
+nvcc —-version
 ```
 Don’t need to try to run examples of CUDA.
 
@@ -66,15 +51,12 @@ sudo apt-get install libgl-dev
 
 Attention: Should be CUDA8.0, CUDA9.0 will cause some error later.
 
-4. Install cuDNN7.0 on ubuntu: 
-
-Follow the “CUDNN Installation Guide”, install with the deb file(more easier). 
-
-Test with the examples; cuDNN version check:
+4. Download and install cuDNN7.0 on ubuntu: [[Link]()]
 ```
-cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+sudo dpkg -i <new-cudnn-runtime>.deb
+sudo dpkg -i <new-cudnn-dev>.deb
+sudo ldconfig
 ```
-
 
 ## Install brightness controller
 ```
