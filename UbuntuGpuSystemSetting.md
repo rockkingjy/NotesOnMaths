@@ -16,7 +16,7 @@ Attention: If choose from the LEGACY OPTIONS, it will cause the problem of unabl
 
 3.Install Nvidia GPU driver and CUDA 8.0
 
-Download cuda_8.0.61_375.26_linux.run [[Link]()]
+Download cuda_8.0.61_375.26_linux.run 
 
 Ctrl+Alt+F1 -> login -> 
 ```
@@ -51,11 +51,16 @@ sudo apt-get install libgl-dev
 
 Attention: Should be CUDA8.0, CUDA9.0 will cause some error later.
 
-4. Download and install cuDNN7.0 on ubuntu: [[Link]()]
+4. Download and install cuDNN7.0 (cudnn-8.0-linux-x64-v7.1.tgz) on ubuntu: [[Link]()]
 ```
-sudo dpkg -i <new-cudnn-runtime>.deb
-sudo dpkg -i <new-cudnn-dev>.deb
-sudo ldconfig
+tar -xzvf cudnn-8.0-linux-x64-v7.1.tgz
+sudo cp cuda/include/cudnn.h /home/elab/yanInstall/cuda-8.0/include
+sudo cp cuda/lib64/libcudnn* /home/elab/yanInstall/cuda-8.0/lib64
+sudo chmod a+r /home/elab/yanInstall/cuda-8.0/include/cudnn.h 
+```
+Check the version of cudnn:
+```
+cat /home/elab/yanInstall/cuda-8.0/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
 
 ## Install brightness controller
