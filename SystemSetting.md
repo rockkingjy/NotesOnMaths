@@ -5,24 +5,30 @@ sudo add-apt-repository ppa:apandada1/brightness-controller
 sudo apt-get update
 sudo apt-get install brightness-controller
 ```
+## Visual Studio Code #ifdef grey out problem:
+File -> Preference -> Settings, add:
+```
+"C_Cpp.dimInactiveRegions": false
+```
 
 ## Install terminator
-
+```
 sudo apt-get install terminator
-
+```
 ## Set the bash color
-
+```
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 chsh -s /usr/bin/zsh
-
+```
 ## Set the vim color
+```
 cd /Users/jinyan
-
+```
 //create a setting file of vim if it doesn't exit;
-
+```
 vim .vimrc 
-
+```
 //copy the file Tips/.vimrc to .vimrc
 
 
