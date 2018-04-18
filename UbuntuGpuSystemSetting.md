@@ -2,7 +2,7 @@
 
 Download ubuntu-16.04.1-desktop-amd64.iso [[Link](https://drive.google.com/drive/folders/11TobALF_VWeBLsCfoVtJhGeRUMW_Oq1m?usp=sharing)]
 
-Create the bootable USB according to the [[link](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#6)].
+Create the bootable USB according to the [[Link](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#6)].
 
 Attention: ubuntu-16.04.3-desktop-amd64.iso always cause error!
 
@@ -62,6 +62,28 @@ Check the version of cudnn:
 ```
 cat /home/elab/yanInstall/cuda-8.0/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
+
+5. Install git
+```
+sudo apt-get install git
+```
+
+6. Install Darknet and download the weights [[Link](https://drive.google.com/drive/folders/1DD1qv4fm-bcdeQIYoB1t_-XciVXq4xxr?usp=sharing)]
+```
+git clone https://github.com/rockkingjy/darknet
+```
+Create folder weights/ in the darknet/, put all the weights inside, set the Makefile+
+```
+GPU=1
+CUDNN=1
+OPENMP=1
+```
+then run:
+```
+./darknet detector demo cfg/coco.data cfg/yolov2.cfg weights/yolo.weights 
+```
+If it run successfully, you will see the predictions.png in darknet/, that also mean your CUDA and cudnn installs corectly.
+
 
 ## Install brightness controller
 ```
