@@ -52,3 +52,7 @@ Tell Git to download the contents of rock/:
 ```
 git submodule update --init --recursive
 ```
+Discard un-committed local changes:
+```
+git checkout .
+```
