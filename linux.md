@@ -1,3 +1,9 @@
+## Record Screen
+```
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get install simplescreenrecorder
+```
 ## Check whether install the package and the version exists
 ```
 apt-cache policy <nameOfPackage>
