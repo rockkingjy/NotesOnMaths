@@ -5,10 +5,18 @@ sudo add-apt-repository ppa:apandada1/brightness-controller
 sudo apt-get update
 sudo apt-get install brightness-controller
 ```
-## Visual Studio Code #ifdef grey out problem:
+## Visual Studio Code #ifdef grey out problem and other settings:
 File -> Preference -> Settings, add:
 ```
-"C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "*.m": "python"
+    },
+    "window.zoomLevel": 0,
+    "editor.fontSize": 12,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "window.newWindowDimensions": "inherit",
 ```
 
 ## Install terminator
