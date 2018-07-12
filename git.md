@@ -46,7 +46,7 @@ git checkout existingbranch
 ```
 - Add submodule 'rock' as a submodule of the repository
 ```
-git submodule add https://github.com/<user>/rock rock
+ git submodule add git@github.com:rockking/caffe.git caffe
 ```
 Tell Git to download the contents of rock/:
 ```
