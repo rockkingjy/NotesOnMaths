@@ -48,6 +48,12 @@ git checkout existingbranch
 ```
  git submodule add git@github.com:rockking/caffe.git caffe
 ```
+- Remove existed submodule
+```
+rm .gitmodules
+rm -rf .git/modules/caffe
+git rm --cached caffe
+```
 Tell Git to download the contents of rock/:
 ```
 git submodule update --init --recursive
