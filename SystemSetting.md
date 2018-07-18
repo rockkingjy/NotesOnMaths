@@ -9,9 +9,6 @@ sudo apt-get install brightness-controller
 File -> Preference -> Settings, add:
 ```
     "C_Cpp.dimInactiveRegions": false,
-    "files.associations": {
-        "*.m": "python"
-    },
     "window.zoomLevel": 0,
     "editor.fontSize": 12,
     "editor.wordWrap": "wordWrapColumn",
