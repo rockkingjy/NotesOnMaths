@@ -9,6 +9,7 @@ sudo apt-get install brightness-controller
 File -> Preference -> Settings, add:
 ```
     "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {"*.m": "matlab"},
     "window.zoomLevel": 0,
     "editor.fontSize": 12,
     "editor.wordWrap": "wordWrapColumn",
