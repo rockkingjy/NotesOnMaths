@@ -1,5 +1,8 @@
 ## Cut Video
+```
+sudo apt-get install kdenlive
 kdenlive
+```
 
 ## Install brightness controller
 ```
