@@ -1,3 +1,5 @@
+## Cut Video
+kdenlive
 
 ## Install brightness controller
 ```
