@@ -1,3 +1,16 @@
+## matlab starup folder setting
+In `./R2017a/toolbox/local/startup.m`:
+```
+cd /media/elab/sdd/mycodes/tracker/ECO
+run('/media/elab/sdd/matlabInstall/vlfeat-0.9.21/toolbox/vl_setup.m')
+```
+Then start Matlab in the terminal:
+```
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 \
+LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
+/media/elab/sdd/R2017a/bin/matlab
+```
+
 ## Record Screen
 ```
 sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
