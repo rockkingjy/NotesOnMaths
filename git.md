@@ -32,6 +32,11 @@ git remote -v
 git remote set-url origin https://github.com/rockkingjy/OpenKAI.git
 git remote -v
 ```
+- Check the size and count of object in the repository
+```
+git count-objects -vH
+```
+
 - Remove git repository
 ```
 rm -rf .git
