@@ -22,9 +22,9 @@ git push -u origin master
 ```
 git pull origin master
 ```
-- Clone the remote repository
+- Force push to remote repository without merge
 ```
-git clone https://github.com/rockkingjy/OpenKAI_docs
+git push -f origin <branch_name>
 ```
 - Change the remote repository URL
 ```
@@ -36,7 +36,6 @@ git remote -v
 ```
 git count-objects -vH
 ```
-
 - Remove git repository
 ```
 rm -rf .git
