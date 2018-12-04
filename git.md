@@ -66,3 +66,7 @@ Discard un-committed local changes:
 ```
 git checkout .
 ```
+- Merging an upstream repository into your fork:
+```
+ git pull https://github.com/yankailab/OpenKAI.git master
+```
