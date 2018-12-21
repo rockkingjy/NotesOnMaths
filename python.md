@@ -11,4 +11,13 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
 ```
 sudo update-alternatives --config python3
 ```
-
+## Error of python3.6 to find a ros version:
+Check PYTHONPATH and set:
+```
+export PYTHONPATH="/usr/local/lib/python3.6/dist-packages"
+```
+## Error of tensorflow GPU run on CUDA8.0:
+To install the version that compatable to CUDA8.0:
+```
+sudo pip3 install tensorflow-gpu==1.4.1 --ignore-installed
+```
