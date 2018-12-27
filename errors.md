@@ -16,3 +16,10 @@
 **Reason**: keras version or tf version not support.
 
 **Solution**: `pip3 install --upgrade keras==2.1.3` for Tensorflow version 1.4.0 .
+
+* ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory
+
+**Reason**: could not find the correct path.
+
+**Solution**: `gedit ~/.bashrc`, add to the last line: `export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-8.0/bin:$PATH`, save and run `source ~/.bashrc`.
